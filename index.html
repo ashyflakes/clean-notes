@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="ashyflakes">
+
+    <meta name="description" content="a clean & simple notepad">
+    <meta property="og:title" content="Notes">
+    <meta property="og:type" content="website">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/notes.png.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+    <title>Notes</title>
+</head>
+<body>
+    <header id="hero">
+        <nav>
+            <a href="#hero" class="header">
+                <img src="images/notes.png.png" alt="notes icon" loading="lazy" class="notes_icon">
+                <h1 class="header">Notes</h1>
+            </a>
+            <div class="buttons">
+                <button class="add_note_btn">+ Add A Note</button>
+                <button id="themeToggleBtn" class="theme_toggle_btn">🌙</button>
+            </div>
+        </nav>
+    </header>
+    <main id="notesContainer" class="notes_grid">
+
+    </main>
+    <dialog id="noteDialog">
+        <div class="dialog_content">
+            <div class="dialog_header">
+                <h2 class="dialog_title" id="dialogTitle">Add A Note</h2>
+                <button class="close_btn">X</button>
+            </div>
+
+            <form id="noteForm">
+                <div class="form_group">
+                    <label for="noteTitle" class="form_label">Title*</label>
+                    <input type="text" id="noteTitle" class="form_input" placeholder="Insert the title..." required>
+                </div>
+                <div class="form_group">
+                    <label for="noteContent" class="form_label">Contents*</label>
+                    <textarea id="noteContent" class="form_textarea" placeholder="Insert the contents.." required></textarea>
+                </div>
+
+                <div class="dialog_actions">
+                    <button type="button" class="cancel_btn">Cancel</button>
+                    <button type="submit" class="save_btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+
+</body>
+</html>
