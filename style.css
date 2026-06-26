@@ -94,8 +94,10 @@ body.dark_theme {
 }
 
 a {
+    display: flex;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 button,
@@ -119,7 +121,7 @@ nav {
     padding: 1rem 2rem;
     backdrop-filter: blur(10px);
 
-    background: linear-gradient(to right, var(--bg), var(--surface-muted));
+    background: var(--surface);
     border-bottom: 1px solid var(--border);
 }
 .notes_icon {
@@ -228,7 +230,7 @@ button:hover {
 }
 
 .note_card {
-    background: linear-gradient(to bottom, var(--surface) 60%, var(--bg));
+    background: var(--surface)
     padding: 1.2rem;
     border-radius: 18px;
     border: 1px solid var(--border);
