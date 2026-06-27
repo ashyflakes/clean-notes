@@ -35,7 +35,7 @@
     --surface: white;
     --surface-muted: #f9f9f9;
     --border: #e5e7eb;
-    --text-black: #111827;
+    --text: #111827;
     --muted: #6b7280;
     --accent: #3b82f6;        /* primary button */
     --accent-hover: #60a5fa;  /* hover */
@@ -48,6 +48,8 @@
     --shadow: rgba(0, 0, 0, 0.35);
 
     --dialog-backdrop: rgba(0, 0, 0, 0.65);
+
+    color: #101010;
 }
 
 html, body {
@@ -71,10 +73,10 @@ input {
 }
 body.dark_theme {
     --bg: #27292e;            /* общий фон страницы */
-    --surface-dark: #333335;       /* карточки / dialog / nav */
+    --surface: #333335;       /* карточки / dialog / nav */
     --border: #3e3f42;        /* границы */
     --surface-muted: #4d4d4d;
-    --text-white: #f8fafc;          /* основной текст */
+    --text: #f8fafc;          /* основной текст */
     --muted: #94a3b8;         /* вторичный текст */
 
     --accent: #3b82f6;        /* primary button */
